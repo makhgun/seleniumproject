@@ -38,7 +38,7 @@ public class T5_GetTextGetAttribute {
         WebElement firstNameInput = driver.findElement(By.className("form-control"));
 
         //5- Verify placeholder attribute’s value is as expected:
-        // Expected: first namee
+        // Expected: first name
         String expectedPlaceHolder = "first name";
         String actualPlaceHolder = firstNameInput.getAttribute("placeholder");
 
