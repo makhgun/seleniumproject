@@ -64,7 +64,7 @@ public class T1_cssSelector_xPathLocator {
         System.out.println("retrievePasswordBtn.isDisplayed() = " + retrievePasswordBtn.isDisplayed());
         System.out.println("poweredByCydeoText.isDisplayed() = " + poweredByCydeoText.isDisplayed());
 
-
+        driver.quit();
 
 
     }
