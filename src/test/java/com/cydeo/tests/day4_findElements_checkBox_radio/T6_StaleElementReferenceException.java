@@ -33,6 +33,7 @@ public class T6_StaleElementReferenceException {
 
         //5- Verify it is displayed, again.
         System.out.println("cydeoLink.isDisplayed() = " + cydeoLink.isDisplayed());
+        driver.quit();
 
     }
 }
