@@ -22,7 +22,7 @@ public class T2_RadioButton {
 //        4. Verify “Hockey” radio button is selected after clicking.
         System.out.println("hockeyBtn.isSelected() = " + hockeyBtn.isSelected());
 
-        driver.quit();
+        //driver.quit();
     }
 
 }
