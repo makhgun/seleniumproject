@@ -24,18 +24,12 @@ public class BrowserUtils {
 
 
     /*
-    TC #2: Create utility method
-1. Create a new class called BrowserUtils
-2. Create a method to make Task1 logic re-usable
-3. When method is called, it should switch window and verify title.
-Method info:
-• Name: switchWindowAndVerify
-• Return type: void
+   This method accepts 3 arguments
 • Arg1: WebDriver
 • Arg2: String expectedInUrl
+    -If condition matches, will break loop
 • Arg3: String expectedTitle
      */
-
     public static void switchWindowAndVerify (WebDriver driver , String expectedInUrl , String expectedInTitle){
 
         Set<String> allWindowsHandles = driver.getWindowHandles();
@@ -50,7 +44,7 @@ Method info:
             }
 
         }
-
+//        5. Assert: Title contains “expectedInTitle”
         String actualTitle = driver.getTitle();
 
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
@@ -60,6 +54,11 @@ Method info:
     }
 
 
+//This method acceps a String "expectedTitle" and Asserts if it is true
+     public static void verifyTitle(WebDriver driver , String expectedTitle){
+
+        Assert.assertEquals(driver.getTitle() , expectedTitle);
+    }
 
 
 
